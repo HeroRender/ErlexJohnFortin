@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>Erlex John Fortin</title>
+
+    <!--<link rel="stylesheet" href="css/rlx.css">-->
+    <script src="scripts/rlx.js"></script>
+    <style>
+        .me {
+            width: 60%;
+            height: 60%;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <div id="divHome" class="row">
+        <div class="col">
+            <img src="Img/Erlex/ME.jpg" alt="Me" class="me img-fluid rounded-circle">
+        </div>
+        <div class="col">
+            <h1>Hello, I`m Erlex John Fortin.<br>
+                I`m a full-stack web and Windows application engineer.
+            </h1>
+            <p>Developing tools for a better living</p>
+        </div>
+
+
+
+    </div>
+
+    <div id="divProjects">
+        <div id="divProjSync">
+            <img src="Img/Sync/SyncConsoleClient_Summary.png" alt="">
+        </div>
+    </div>
+
+    <div id="divContact">
+
+    </div>
+
+    <script>
+        function objProject(Container, ProjectName, Link, Description, Platform, arrayScreenShots) {
+            this.Container =  Container;
+            this.ProjectName = ProjectName;
+            this.Link = Link;
+            this.Description = Description
+            this.Platform = Platform
+            this.ScreenShots = arrayScreenShots;
+
+            let divScreenShots = this.Container + '_ScreenShots';
+            this.Render = function () {
+                $('#' + this.Container)
+                    .html('')
+                    .append($('<h1>')
+                        .text(this.ProjectName))
+
+                    .append($('<p>')
+                        .text(this.Description + (Link ? ' For more information please click ' : ''))
+                        .append($('<a>')
+                            .attr('href', this.Link)
+                            .text(Link ? 'here.' : '')))
+
+                    .append($('<p>').text(this.Platform))
+                    .append($('<div>').attr('id', divScreenShots))
+                        
+                CreateScreenShots(this.ScreenShots);
+            }
+
+            function CreateScreenShots(ScreenShots){
+                for (let item in ScreenShots) {
+                    $('#' + divScreenShots)
+                        .append($('<img>')
+                            .attr('src', ScreenShots[item]))
+                }
+            }
+        }
+
+        $(document).ready(function () {
+            let objSync = new objProject('divProjSync'
+                , 'EDS Sync'
+                , 'https://www.eds.com.ph/sync'
+                , 'An application to synchronize database records from server to ALL clients.'
+                , 'Windows/Web'
+                , ['Img/Sync/SyncApp_Server.png'
+                    ,'Img/Sync/SyncConsoleServer_Summary.png'
+                    ,'Img/Sync/SyncApp_Client.png'
+                    ,'Img/Sync/SyncConsoleClient_Summary.png'])
+            objSync.Link = null;
+            objSync.Render();
+            
+        })
+    </script>
+</body>
+
+</html>
