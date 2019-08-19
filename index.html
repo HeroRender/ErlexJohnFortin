@@ -48,8 +48,15 @@
 
     <div id="divProjects">
         <div id="divProjSync">
-            <img src="Img/Sync/SyncConsoleClient_Summary.png" alt="">
+
         </div>
+        <div id="divProjRTAV">
+            <img src="Img/RTAV/RTAV_Details.png" alt="">
+        </div>
+        <div id="divProjGPS"></div>
+        <div id="divProjBridge"></div>
+        <div id="divProjJAC"></div>
+
     </div>
 
     <div id="divContact">
@@ -57,35 +64,39 @@
     </div>
 
     <script>
+        // Parent Object
         function objProject(Container, ProjectName, Link, Description, Platform, arrayScreenShots) {
-            this.Container =  Container;
+            // Properties
+            this.Container = Container;
             this.ProjectName = ProjectName;
             this.Link = Link;
             this.Description = Description
             this.Platform = Platform
             this.ScreenShots = arrayScreenShots;
 
+            // Abstracted Property
             let divScreenShots = this.Container + '_ScreenShots';
+
+            // Method
             this.Render = function () {
                 $('#' + this.Container)
                     .html('')
                     .append($('<h1>')
-                        .text(this.ProjectName))
-
+                        .text(this.ProjectName || '<Unnamed>'))
                     .append($('<p>')
-                        .text(this.Description + (Link ? ' For more information please click ' : ''))
+                        .text((this.Description || '<No Info>') + (this.Link ? ' For more information please click ' : ''))
                         .append($('<a>')
-                            .attr('href', this.Link)
-                            .text(Link ? 'here.' : '')))
-
-                    .append($('<p>').text(this.Platform))
+                            .attr('href', this.Link || '#')
+                            .text(this.Link ? 'here.' : '')))
+                    .append($('<p>').text(this.Platform) || '<No Info>')
                     .append($('<div>').attr('id', divScreenShots))
-                        
+
                 CreateScreenShots(this.ScreenShots);
             }
 
-            function CreateScreenShots(ScreenShots){
-                for (let item in ScreenShots) {
+            // Abstracted method
+            function CreateScreenShots(ScreenShots) {
+                for (const item in ScreenShots) {
                     $('#' + divScreenShots)
                         .append($('<img>')
                             .attr('src', ScreenShots[item]))
@@ -100,12 +111,27 @@
                 , 'An application to synchronize database records from server to ALL clients.'
                 , 'Windows/Web'
                 , ['Img/Sync/SyncApp_Server.png'
-                    ,'Img/Sync/SyncConsoleServer_Summary.png'
-                    ,'Img/Sync/SyncApp_Client.png'
-                    ,'Img/Sync/SyncConsoleClient_Summary.png'])
-            objSync.Link = null;
-            objSync.Render();
+                    , 'Img/Sync/SyncConsoleServer_Summary.png'
+                    , 'Img/Sync/SyncApp_Client.png'
+                    , 'Img/Sync/SyncConsoleClient_Summary.png']);
+
+            let objRTAV = new objProject('divProjRTAV'
+                , 'EDS RTAV(For Cloud Devices)'
+                , 'https://www.eds.com.ph/smart-phone-app-rtav'
+                , 'Serving as a tool to configure Arduino devices, view captured attendance and meal monitoring.'
+                , 'Web'
+                , ['Img/RTAV/RTAV_Home.png'
+                    ,'Img/RTAV/RTAV_Details.png'
+                    , 'Img/RTAV/RTAV_CloudTools_Home.png'
+                    , 'Img/RTAV/RTAV_CloudTools_Enrollment.png'
+                    , 'Img/RTAV/RTAV_CloudTools_Assigning.png',])
+
             
+            let objProjects = [objSync, objRTAV]
+            for (const item in objProjects) {
+                objProjects[item].Render();
+
+            }
         })
     </script>
 </body>
