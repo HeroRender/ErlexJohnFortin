@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -22,6 +20,7 @@
 
     <!--<link rel="stylesheet" href="css/rlx.css">-->
     <script src="scripts/rlx.js"></script>
+    <script src="scripts/index.js"></script>
     <style>
         .me {
             width: 60%;
@@ -37,7 +36,7 @@
         </div>
         <div class="col">
             <h1>Hello, I`m Erlex John Fortin.<br>
-                I`m a full-stack web and Windows application engineer.
+                I`m a full-stack web and Windows application Engineer.
             </h1>
             <p>Developing tools for a better living</p>
         </div>
@@ -47,93 +46,15 @@
     </div>
 
     <div id="divProjects">
-        <div id="divProjSync">
-
-        </div>
-        <div id="divProjRTAV">
-            <img src="Img/RTAV/RTAV_Details.png" alt="">
-        </div>
+        <div id="divProjSync"></div>
+        <div id="divProjRTAV"></div>
         <div id="divProjGPS"></div>
         <div id="divProjBridge"></div>
         <div id="divProjJAC"></div>
-
     </div>
 
     <div id="divContact">
-
     </div>
-
-    <script>
-        // Parent Object
-        function objProject(Container, ProjectName, Link, Description, Platform, arrayScreenShots) {
-            // Properties
-            this.Container = Container;
-            this.ProjectName = ProjectName;
-            this.Link = Link;
-            this.Description = Description
-            this.Platform = Platform
-            this.ScreenShots = arrayScreenShots;
-
-            // Abstracted Property
-            let divScreenShots = this.Container + '_ScreenShots';
-
-            // Method
-            this.Render = function () {
-                $('#' + this.Container)
-                    .html('')
-                    .append($('<h1>')
-                        .text(this.ProjectName || '<Unnamed>'))
-                    .append($('<p>')
-                        .text((this.Description || '<No Info>') + (this.Link ? ' For more information please click ' : ''))
-                        .append($('<a>')
-                            .attr('href', this.Link || '#')
-                            .text(this.Link ? 'here.' : '')))
-                    .append($('<p>').text(this.Platform) || '<No Info>')
-                    .append($('<div>').attr('id', divScreenShots))
-
-                CreateScreenShots(this.ScreenShots);
-            }
-
-            // Abstracted method
-            function CreateScreenShots(ScreenShots) {
-                for (const item in ScreenShots) {
-                    $('#' + divScreenShots)
-                        .append($('<img>')
-                            .attr('src', ScreenShots[item]))
-                }
-            }
-        }
-
-        $(document).ready(function () {
-            let objSync = new objProject('divProjSync'
-                , 'EDS Sync'
-                , 'https://www.eds.com.ph/sync'
-                , 'An application to synchronize database records from server to ALL clients.'
-                , 'Windows/Web'
-                , ['Img/Sync/SyncApp_Server.png'
-                    , 'Img/Sync/SyncConsoleServer_Summary.png'
-                    , 'Img/Sync/SyncApp_Client.png'
-                    , 'Img/Sync/SyncConsoleClient_Summary.png']);
-
-            let objRTAV = new objProject('divProjRTAV'
-                , 'EDS RTAV(For Cloud Devices)'
-                , 'https://www.eds.com.ph/smart-phone-app-rtav'
-                , 'Serving as a tool to configure Arduino devices, view captured attendance and meal monitoring.'
-                , 'Web'
-                , ['Img/RTAV/RTAV_Home.png'
-                    ,'Img/RTAV/RTAV_Details.png'
-                    , 'Img/RTAV/RTAV_CloudTools_Home.png'
-                    , 'Img/RTAV/RTAV_CloudTools_Enrollment.png'
-                    , 'Img/RTAV/RTAV_CloudTools_Assigning.png',])
-
-            
-            let objProjects = [objSync, objRTAV]
-            for (const item in objProjects) {
-                objProjects[item].Render();
-
-            }
-        })
-    </script>
 </body>
 
 </html>

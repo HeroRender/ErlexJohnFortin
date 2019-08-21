@@ -1,0 +1,23 @@
+{
+    "ProjectName": "EDS GPS Attendance Capture",
+    "Link": "https://play.google.com/store/apps/details?id=com.edsinnoventions.timekeepingviagps",
+    "Description": "Captures GPS and time data like attendance, supports online and offline mode.",
+    "Platform": "Android/iOS",
+    "ScreenShots": [
+        {
+            "Name": "Main Page",
+            "Details" : "",
+            "URL": "Img/GPS/GPS_Index.png"
+        },
+        {
+            "Name": "Attendance History ",
+            "Details" : "",
+            "URL": "Img/GPS/GPS_Histor.png"
+        },
+        {
+            "Name": "Setup Page",
+            "Details" : "",
+            "URL": "Img/GPS/GPS_Login.png"
+        }
+    ]
+}

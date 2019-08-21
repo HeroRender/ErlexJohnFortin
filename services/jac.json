@@ -1,0 +1,18 @@
+{
+    "ProjectName": "JAC 2016 & 2017",
+    "Link": "https://play.google.com/store/apps/details?id=com.edsinnoventions.jac2017",
+    "Description": "Joint Annual Convetion(JAC) Application to be used as a brochure and map",
+    "Platform": "Android/iOS",
+    "ScreenShots": [
+        {
+            "Name": "Home Banner",
+            "Details" : "",
+            "URL": "Img/JAC/JAC2017.png"
+        },
+        {
+            "Name": "Remainder",
+            "Details" : "",
+            "URL": "Img/JAC/JAC2017_Remainder.png"
+        }
+    ]
+}

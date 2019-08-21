@@ -1,0 +1,28 @@
+{
+    "ProjectName": "EDS Sync",
+    "Link": "https: //www.eds.com.ph/sync",
+    "Description": "An application to synchronize database records from server to ALL clients.",
+    "Platform": "Windows/Web",
+    "ScreenShots": [
+        {
+            "Name": "Sync Server Windows Applicaion",
+            "Details" : "",
+            "URL": "Img/Sync/SyncApp_Server.png"
+        },
+        {
+            "Name": "Sync Client Web Console Applicaion",
+            "Details" : "",
+            "URL": "Img/Sync/SyncConsoleServer_Summary.png"
+        },
+        {
+            "Name": "Sync Client Windows Applicaion",
+            "Details" : "",
+            "URL": "Img/Sync/SyncApp_Client.png"
+        },
+        {
+            "Name": "Sync Client Web Console Applicaion",
+            "Details" : "",
+            "URL": "Img/Sync/SyncConsoleClient_Summary.png"
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "ProjectName": "EDS Bridge",
+    "Link": "https://www.eds.com.ph/cloudbio",
+    "Description": "Captures the attendance of students with pictures then the parent will be notified on their app.",
+    "Platform": "PC, Web, Android/iOS",
+    "ScreenShots": [
+        {
+            "Name": "Windows Application",
+            "Details" : "the one responsible for capturing attendance of the student",
+            "URL": "Img/Bridge/BridgeApp_Win.png"
+        },
+        {
+            "Name": "Bridge App Home Page",
+            "Details" : "Parent or guardian may his/her children attendance in here.",
+            "URL": "Img/Bridge/BridgeApp_Home.png"
+        },
+        {
+            "Name": "Bridge App Home login page",
+            "Details" : "Parent or guardian needs to input his/her unique activation code here.",
+            "URL": "Img/Bridge/BridgeApp_Login.png"
+        }
+    ]
+}
