@@ -11,7 +11,6 @@ function objProject(Container, Source) {
 
     this.Render = function () {
         let Prop = this.Propeties;
-        console.log(Prop.ProjectName)
         $('#' + this.Container)
             .html('')
             .append($('<h1>')
@@ -29,20 +28,38 @@ function objProject(Container, Source) {
 
     // Abstracted Methods/functions
     function CreateScreenShots(ScreenShots) {
+        if (ScreenShots.lenght > 0) return false;
+        let carouselID = divScreenShots + '_Carousel';
+        $('#' + divScreenShots)
+            .append($(`<div id=${carouselID} class="carousel slide" data-ride="carousel">`)
+                .append('<ol class="carousel-indicators">')
+                .append('<div class="carousel-inner" role="listbox">')
+                .append($(`<a class="carousel-control-prev" href="#${carouselID}" role="button" data-slide="prev">`)
+                    .append('<span class="carousel-control-prev-icon" aria-hidden="true">')
+                    .append('<span class="sr-only">Previous</span>'))
+                .append($(`<a class="carousel-control-next" href="#${carouselID}" role="button" data-slide="prev">`)
+                    .append('<span class="carousel-control-next-icon" aria-hidden="true">')
+                    .append('<span class="sr-only">Next</span>'))
+            )
+
         for (const item in ScreenShots) {
-            $('#' + divScreenShots)
-                .append($('<img>')
-                    .attr('src', ScreenShots[item].URL)
-                    .attr('alt', ScreenShots[item].Name))
-                .append($('<h5>').text(ScreenShots[item].Name))
-                .append($('<p>').text(ScreenShots[item].Details))
+            $('#' + carouselID + ' .carousel-inner')
+                .append($('<div class="carousel-item ' + (item == 0 ? 'active' : '') + '">')
+                    .append($('<img>')
+                        .attr('src', ScreenShots[item].URL)
+                        .attr('alt', ScreenShots[item].Name))
+                    .append($('<div class="carousel-caption d-none d-md-block">')
+                            .append($('<h5>').text(ScreenShots[item].Name))
+                            .append($('<p>').text(ScreenShots[item].Details))
+                        )
+                )
         }
     }
 
     // Properties
     this.Propeties = {};
     this.Container = Container;
-    
+
     // Abstracted Property
     let thisObject = this;
     let divScreenShots = this.Container + '_ScreenShots';
