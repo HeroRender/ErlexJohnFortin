@@ -3,21 +3,21 @@
     "Category": "Corporate",
     "Link": "https://play.google.com/store/apps/details?id=com.edsinnoventions.timekeepingviagps",
     "Description": "Captures GPS and time data like attendance, supports online and offline mode.",
-    "Platform": "Android/iOS",
-    "ScreenShots": [
-        {
+    "Summary": "",
+    "Platform": "<i class=\"fab fa-android\"></i> <i class=\"fab fa-apple\"></i>",
+    "ScreenShots": [{
             "Name": "Main Page",
-            "Details" : "",
+            "Details": "",
             "URL": "Img/GPS/GPS_Index.png"
         },
         {
             "Name": "Attendance History ",
-            "Details" : "",
+            "Details": "",
             "URL": "Img/GPS/GPS_Histor.png"
         },
         {
             "Name": "Setup Page",
-            "Details" : "",
+            "Details": "",
             "URL": "Img/GPS/GPS_Login.png"
         }
     ]

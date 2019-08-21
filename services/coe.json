@@ -2,10 +2,10 @@
     "ProjectName": "Clash Of Emoji",
     "Category": "Games",
     "Link": "https://drive.google.com/open?id=1lIEfv6ByrXAxFrzhAJViClD7sDEujZFn",
+    "Summary": "",
     "Description": "",
-    "Platform": "Android",
-    "ScreenShots": [
-        {
+    "Platform": "<i class=\"fab fa-android\"></i>",
+    "ScreenShots": [{
             "Name": "Home Page",
             "Details": "",
             "URL": "Img/COE/COE_Home.png"

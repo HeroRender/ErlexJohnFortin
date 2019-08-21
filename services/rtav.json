@@ -3,31 +3,31 @@
     "Category": "Corporate",
     "Link": "https://www.eds.com.ph/cloudbio",
     "Description": "Serving as a tool to configure Arduino devices, view captured attendance and meal monitoring.",
-    "Platform": "Web/IoT Devices",
-    "ScreenShots": [
-        {
+    "Summary": "",
+    "Platform": "<i class=\"fab fa-chrome\"> IoT",
+    "ScreenShots": [{
             "Name": "RTAV Home",
-            "Details" : "",
+            "Details": "",
             "URL": "Img/RTAV/RTAV_Home.png"
         },
         {
             "Name": "RTAV Details",
-            "Details" : "",
+            "Details": "",
             "URL": "Img/RTAV/RTAV_Details.png"
         },
         {
             "Name": "CloudTools Home Page",
-            "Details" : "",
+            "Details": "",
             "URL": "Img/RTAV/RTAV_CloudTools_Home.png"
         },
         {
             "Name": "CloudTools Identification Enrollment Page",
-            "Details" : "",
+            "Details": "",
             "URL": "Img/RTAV/RTAV_CloudTools_Enrollment.png"
         },
         {
             "Name": "CloudTools Branch Assigning Page",
-            "Details" : "",
+            "Details": "",
             "URL": "Img/RTAV/RTAV_CloudTools_Assigning.png"
         }
     ]

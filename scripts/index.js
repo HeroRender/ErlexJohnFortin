@@ -1,31 +1,40 @@
 // Parent Object
 function objProject(Container, Source) {
     // Methods/functions
-    this.LoadData = function (URL) {
-        $.get(URL, function (DATA) {
+    this.LoadData = function(URL) {
+        $.get(URL, function(DATA) {
             thisObject.Propeties = DATA;
             // Render the object
             thisObject.Render();
         });
     }
 
-    this.Render = function () {
+    this.Render = function() {
         let Prop = this.Propeties;
         $('#' + this.Container)
             .html('')
-            .addClass('row')
             .append($('<div>')
-                .addClass('col')
-                .append($('<h1>')
-                    .text(Prop.ProjectName || '<Unnamed>'))
-                .append($('<p>')
-                    .text((Prop.Description || '<No Info>') + (Prop.Link ? ' For more information please click ' : ''))
+                .addClass('resume-item d-flex flex-column flex-md-row justify-content-between mb-5')
+                .append($('<div>')
+                    .addClass('resume-content')
+                    .append($('<h3>')
+                        .addClass('mb-0')
+                        .text(Prop.ProjectName || '<Unnamed>'))
+                    .append($('<div>')
+                        .addClass('subheading mb-3')
+                        .text(((Prop.Description || Prop.Summary) || '<No Info>')))
+                    /*.text((Prop.Description || '<No Info>') + (Prop.Link ? ' For more information please click ' : ''))
                     .append($('<a>')
                         .attr('href', Prop.Link || '#')
-                        .text(Prop.Link ? 'here.' : '')))
-                .append($('<p>').text(Prop.Platform) || '<No Info>')
-            ).append($('<div>').addClass('col').attr('id', divScreenShots))
-
+                        .text(Prop.Link ? 'here.' : '')))*/
+                    .append($('<p>')
+                        .html('Platform: <span class="text-primary">' + (Prop.Platform || '<No Info>') + '</span>'))
+                ).append($('<div>')
+                    .addClass('resume-date text-md-right text-primary')
+                    //.html(Prop.Platform || '(No Info)'))
+                    //.attr('id', divScreenShots)
+                )
+            )
         CreateScreenShots(Prop.ScreenShots);
     }
 
@@ -52,7 +61,7 @@ function objProject(Container, Source) {
                         .attr('src', ScreenShots[item].URL)
                         .attr('alt', ScreenShots[item].Name)
                         .addClass('img-fluid img-thumbnail'))
-                        .css('width','80%')
+                    .css('width', '80%')
                     .append($('<div class="carousel-caption d-none d-md-block bg-dark">')
                         .append($('<h5>').text(ScreenShots[item].Name))
                         .append($('<p>').text(ScreenShots[item].Details))
@@ -82,7 +91,7 @@ function objProject(Container, Source) {
     }
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
     // Corporate
     let objSync = new objProject('divProjSync', 'services/sync.json');
     let objRTAV = new objProject('divProjRTAV', 'services/rtav.json')

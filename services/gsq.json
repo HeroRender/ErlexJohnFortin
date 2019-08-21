@@ -3,26 +3,26 @@
     "Category": "Games",
     "Link": "https://drive.google.com/open?id=1Fp3QsaA9NluJigZwt5eIqjOxVe4k-bBv",
     "Description": "Captures GPS and time data like attendance, supports online and offline mode.",
-    "Platform": "Android/iOS",
-    "ScreenShots": [
-        {
+    "Summary": "",
+    "Platform": "<i class=\"fab fa-android\"></i>",
+    "ScreenShots": [{
             "Name": "Home Page",
-            "Details" : "",
+            "Details": "",
             "URL": "Img/GSQ/GSQ_Home.png"
         },
         {
             "Name": "Adventure Mode",
-            "Details" : "",
+            "Details": "",
             "URL": "Img/GSQ/GSQ_Adventure_1.png"
         },
         {
             "Name": "Loading Page",
-            "Details" : "",
+            "Details": "",
             "URL": "Img/GSQ/GSQ_Loading.png"
         },
         {
             "Name": "Leader Board",
-            "Details" : "",
+            "Details": "",
             "URL": "Img/GSQ/GSQ_LeaderBoard.png"
         }
     ]

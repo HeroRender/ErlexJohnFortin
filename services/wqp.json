@@ -3,21 +3,21 @@
     "Category": "Games",
     "Link": "https://drive.google.com/open?id=1DWYUqF39eDY8PT9ua9AYElszf5Ctjbc5",
     "Description": "",
-    "Platform": "Android",
-    "ScreenShots": [
-        {
+    "Summary": "",
+    "Platform": "<i class=\"fab fa-android\"></i>",
+    "ScreenShots": [{
             "Name": "Home Page",
-            "Details" : "",
+            "Details": "",
             "URL": "Img/WQP/WQP_Home.png"
         },
         {
             "Name": "Game Mode",
-            "Details" : "",
+            "Details": "",
             "URL": "Img/WQP/WQP_GameMode.png"
         },
         {
             "Name": "Leader Board",
-            "Details" : "",
+            "Details": "",
             "URL": "Img/WQP/WQP_LeaderBoard.png"
         }
     ]
