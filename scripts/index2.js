@@ -1,15 +1,15 @@
 // Parent Object
 function objProject(Container, Source) {
     // Methods/functions
-    this.LoadData = function (URL) {
-        $.get(URL, function (DATA) {
+    this.LoadData = function(URL) {
+        $.get(URL, function(DATA) {
             thisObject.Propeties = DATA;
             // Render the object
             thisObject.Render();
         });
     }
 
-    this.Render = function () {
+    this.Render = function() {
         let Prop = this.Propeties;
         $('#' + this.Container)
             .html('')
@@ -23,7 +23,7 @@ function objProject(Container, Source) {
                     .append($('<a>')
                         .attr('href', Prop.Link || '#')
                         .text(Prop.Link ? 'here.' : '')))
-                .append($('<p>').text(Prop.Platform) || '<No Info>')
+                .append($('<p>').html(Prop.Platform) || '<No Info>')
             ).append($('<div>').addClass('col').attr('id', divScreenShots))
 
         CreateScreenShots(Prop.ScreenShots);
@@ -52,7 +52,7 @@ function objProject(Container, Source) {
                         .attr('src', ScreenShots[item].URL)
                         .attr('alt', ScreenShots[item].Name)
                         .addClass('img-fluid img-thumbnail'))
-                        .css('width','80%')
+                    .css('width', '80%')
                     .append($('<div class="carousel-caption d-none d-md-block bg-dark">')
                         .append($('<h5>').text(ScreenShots[item].Name))
                         .append($('<p>').text(ScreenShots[item].Details))
@@ -82,7 +82,7 @@ function objProject(Container, Source) {
     }
 }
 
-$(document).ready(function () {
+$(document).ready(function() {
     // Corporate
     let objSync = new objProject('divProjSync', 'services/sync.json');
     let objRTAV = new objProject('divProjRTAV', 'services/rtav.json')

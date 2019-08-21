@@ -1,10 +1,12 @@
 {
-    "ProjectName": "EDS GPS Attendance Capture",
+    "ProjectName": "Gun Shot Quiz",
     "Category": "Games",
     "Link": "https://drive.google.com/open?id=1Fp3QsaA9NluJigZwt5eIqjOxVe4k-bBv",
-    "Description": "Captures GPS and time data like attendance, supports online and offline mode.",
-    "Summary": "",
+    "Summary": "IT exam pretty hard? Want to review but in a fun way? Gamified it! Gun Shot Quiz will ask you random question from our database. Show em what you got!",
+    "Description": "Run, Solve and Learnd! Gun Shot Quiz is a quiz puzzle puzzle platformer where it can help IT students can test their knowledge on IT related field. Gun Shot Quiz offers wide variety of questions and topics for the best expirience.",
     "Platform": "<i class=\"fab fa-android\"></i>",
+    "Features": "Question Database, Saving, Loading, Clearing of Saved data, Sound & Background FX,Leader board, Hint.",
+    "Tools": "Game Maker Studio",
     "ScreenShots": [{
             "Name": "Home Page",
             "Details": "",

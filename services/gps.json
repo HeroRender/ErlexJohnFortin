@@ -2,23 +2,26 @@
     "ProjectName": "EDS GPS Attendance Capture",
     "Category": "Corporate",
     "Link": "https://play.google.com/store/apps/details?id=com.edsinnoventions.timekeepingviagps",
-    "Description": "Captures GPS and time data like attendance, supports online and offline mode.",
-    "Summary": "",
+    "Description": "This App allows attendance capture and location determination of field-assigned employees. A \"selfie\" function is also included that provides the manager a visual indication of the surroundings at the time when the transaction occurred.",
+    "Summary": "Captures GPS and time data like attendance, supports online and offline mode.",
+    "Orientation": 1,
     "Platform": "<i class=\"fab fa-android\"></i> <i class=\"fab fa-apple\"></i>",
+    "Features": "GPS, Fool Proof time data capturing, Error Reporting, Time Data History, QR code setup",
+    "Tools": "Ionic3, AngularJS, CSS3, HTML5, JavaScript, Cordova(Camera,QR) API, Google Maps API",
     "ScreenShots": [{
             "Name": "Main Page",
             "Details": "",
-            "URL": "Img/GPS/GPS_Index.png"
+            "URL": "Img/GPS/GPS_Index.jpg"
         },
         {
             "Name": "Attendance History ",
             "Details": "",
-            "URL": "Img/GPS/GPS_Histor.png"
+            "URL": "Img/GPS/GPS_Histor.jpg"
         },
         {
             "Name": "Setup Page",
             "Details": "",
-            "URL": "Img/GPS/GPS_Login.png"
+            "URL": "Img/GPS/GPS_Login.jpg"
         }
     ]
 }

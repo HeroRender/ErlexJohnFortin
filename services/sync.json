@@ -5,25 +5,26 @@
     "Description": "An application to synchronize database records from server to ALL clients.",
     "Summary": "",
     "Platform": "<i class = \"fab fa-windows\"></i> <i class=\"fab fa-chrome\">",
+    "Tools": "VB.Net, Win Sockets,C# Web Forms, Razor, CSS3, HTML5, JavaScript, JQuery, BootStrap,",
     "ScreenShots": [{
             "Name": "Sync Server Windows Applicaion",
             "Details": "",
-            "URL": "Img/Sync/SyncApp_Server.png"
+            "URL": "Img/Sync/SyncApp_Server.jpg"
         },
         {
-            "Name": "Sync Client Web Console Applicaion",
+            "Name": "Sync Client Web Console: Summary",
             "Details": "",
-            "URL": "Img/Sync/SyncConsoleServer_Summary.png"
+            "URL": "Img/Sync/SyncConsoleServer_Summary.jpg"
+        },
+        {
+            "Name": "Sync Server Web Console: Details",
+            "Details": "",
+            "URL": "Img/Sync/SyncConsoleServer_Detail.jpg"
         },
         {
             "Name": "Sync Client Windows Applicaion",
             "Details": "",
-            "URL": "Img/Sync/SyncApp_Client.png"
-        },
-        {
-            "Name": "Sync Client Web Console Applicaion",
-            "Details": "",
-            "URL": "Img/Sync/SyncConsoleClient_Summary.png"
+            "URL": "Img/Sync/SyncApp_Client.jpg"
         }
     ]
 }

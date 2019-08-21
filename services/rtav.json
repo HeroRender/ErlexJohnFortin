@@ -2,33 +2,35 @@
     "ProjectName": "EDS RTAV(For Cloud Devices)",
     "Category": "Corporate",
     "Link": "https://www.eds.com.ph/cloudbio",
-    "Description": "Serving as a tool to configure Arduino devices, view captured attendance and meal monitoring.",
-    "Summary": "",
+    "Description": "Linked with EDS biometric products serving as a tool to configure IoT devices, view captured attendance and meal monitoring.",
+    "Summary": "Provides individual employees with real-time time logs. Eliminates confusion and inquiries sent to the HR department. Transferring employees between locations. Allows or restricts the movement of employees to other branches/stores.",
     "Platform": "<i class=\"fab fa-chrome\"> IoT",
+    "Features": "Real Time Attendance & Meal Monitoring, Downloading and Exporting of Encrypted Timedata, Configuring/Managing/OTA Update of IoT Time keeping Devices, Branch Assiging, Report Generation",
+    "Tools": "C# MVC ASP.net , CSS3, HTML5, JavaScript, JQuery, BootStrap, MQTT, Effine Encryption",
     "ScreenShots": [{
             "Name": "RTAV Home",
             "Details": "",
-            "URL": "Img/RTAV/RTAV_Home.png"
+            "URL": "Img/RTAV/RTAV_Home.jpg"
         },
         {
             "Name": "RTAV Details",
             "Details": "",
-            "URL": "Img/RTAV/RTAV_Details.png"
+            "URL": "Img/RTAV/RTAV_Details.jpg"
         },
         {
             "Name": "CloudTools Home Page",
             "Details": "",
-            "URL": "Img/RTAV/RTAV_CloudTools_Home.png"
+            "URL": "Img/RTAV/RTAV_CloudTools_Home.jpg"
         },
         {
             "Name": "CloudTools Identification Enrollment Page",
             "Details": "",
-            "URL": "Img/RTAV/RTAV_CloudTools_Enrollment.png"
+            "URL": "Img/RTAV/RTAV_CloudTools_Enrollment.jpg"
         },
         {
             "Name": "CloudTools Branch Assigning Page",
             "Details": "",
-            "URL": "Img/RTAV/RTAV_CloudTools_Assigning.png"
+            "URL": "Img/RTAV/RTAV_CloudTools_Assigning.jpg"
         }
     ]
 }
