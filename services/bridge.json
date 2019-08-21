@@ -1,5 +1,6 @@
 {
     "ProjectName": "EDS Bridge",
+    "Category": "Corporate",
     "Link": "https://www.eds.com.ph/cloudbio",
     "Description": "Captures the attendance of students with pictures then the parent will be notified on their app.",
     "Platform": "PC, Web, Android/iOS",

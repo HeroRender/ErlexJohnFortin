@@ -1,5 +1,6 @@
 {
     "ProjectName": "EDS GPS Attendance Capture",
+    "Category": "Games",
     "Link": "https://drive.google.com/open?id=1Fp3QsaA9NluJigZwt5eIqjOxVe4k-bBv",
     "Description": "Captures GPS and time data like attendance, supports online and offline mode.",
     "Platform": "Android/iOS",

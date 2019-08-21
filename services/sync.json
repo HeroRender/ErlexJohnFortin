@@ -1,5 +1,6 @@
 {
     "ProjectName": "EDS Sync",
+    "Category": "Corporate",
     "Link": "https: //www.eds.com.ph/sync",
     "Description": "An application to synchronize database records from server to ALL clients.",
     "Platform": "Windows/Web",

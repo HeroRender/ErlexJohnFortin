@@ -1,5 +1,6 @@
 {
     "ProjectName": "EDS RTAV(For Cloud Devices)",
+    "Category": "Corporate",
     "Link": "https://www.eds.com.ph/cloudbio",
     "Description": "Serving as a tool to configure Arduino devices, view captured attendance and meal monitoring.",
     "Platform": "Web/IoT Devices",

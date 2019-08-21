@@ -1,5 +1,6 @@
 {
     "ProjectName": "EDS GPS Attendance Capture",
+    "Category": "Corporate",
     "Link": "https://play.google.com/store/apps/details?id=com.edsinnoventions.timekeepingviagps",
     "Description": "Captures GPS and time data like attendance, supports online and offline mode.",
     "Platform": "Android/iOS",
