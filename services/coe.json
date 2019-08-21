@@ -1,0 +1,28 @@
+{
+    "ProjectName": "Clash Of Emoji",
+    "Link": "https://drive.google.com/open?id=1lIEfv6ByrXAxFrzhAJViClD7sDEujZFn",
+    "Description": "",
+    "Platform": "Android",
+    "ScreenShots": [
+        {
+            "Name": "Home Page",
+            "Details": "",
+            "URL": "Img/COE/COE_Home.png"
+        },
+        {
+            "Name": "Game Mode:Lv1",
+            "Details": "",
+            "URL": "Img/COE/COE_GameMode.png"
+        },
+        {
+            "Name": "Level Selection",
+            "Details": "",
+            "URL": "Img/COE/COE_SelectLevel.png"
+        },
+        {
+            "Name": "Player Selection",
+            "Details": "",
+            "URL": "Img/COE/COE_SelectPlayer.png"
+        }
+    ]
+}

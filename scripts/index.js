@@ -1,6 +1,6 @@
 // Parent Object
 function objProject(Container, Source) {
-    // Method
+    // Methods/functions
     this.LoadData = function (URL) {
         $.get(URL, function (DATA) {
             thisObject.Propeties = DATA;
@@ -13,8 +13,6 @@ function objProject(Container, Source) {
             // Render the object
             thisObject.Render();
         });
-
-
     }
 
     this.Render = function () {
@@ -33,7 +31,7 @@ function objProject(Container, Source) {
         CreateScreenShots(this.ScreenShots);
     }
 
-    // Abstracted method
+    // Abstracted Methods/functions
     function CreateScreenShots(ScreenShots) {
         for (const item in ScreenShots) {
             $('#' + divScreenShots)
