@@ -2,8 +2,8 @@
     "ProjectName": "EDS Sync",
     "Category": "Corporate",
     "Link": "https: //www.eds.com.ph/sync",
-    "Description": "An application to synchronize database records from server to ALL clients.",
-    "Summary": "Having problem handling data of your multiple branch? Have to download time data from satelite branch and upload to server data? time data may be tampered during this process, isn`t it risky. Well luckily EDS Sync got you covered! time data, employee information/status, suspend employee to work and a lot more. anything you want to do on database can be done thru EDS sync. It is just simply amazing. ",
+    "Description": "Having problem handling data of your multiple branch? Have to download time data from satelite branch and upload to server data? time data may be tampered during this process, isn`t it risky. Well luckily EDS Sync got you covered! time data, employee information/status, suspend employee to work and a lot more. anything you want to do on database can be done thru EDS sync. It is just simply amazing.",
+    "Summary": "An application to synchronize database records from server to ALL clients.",
     "Platform": "<i class = \"fab fa-windows\"></i> <i class=\"fab fa-chrome\">",
     "Tools": "VB.Net, Win Sockets,C# Web Forms, Razor, CSS3, HTML5, JavaScript, JQuery, BootStrap,",
     "ScreenShots": [{
