@@ -1,23 +1,6 @@
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.me {
-    width: 80%;
-}
-
-#divHome {
-    height: 100%;
-    min-height: 100%;
+#about {
     background-color: #111;
-    background-image: url("/Img/NotMine/demo-bg.jpg");
+    background-image: url("/Img/Res/demo-bg.jpg");
     background-size: cover;
     background-position: center center;
-    color: #eee;
-    overflow: hidden;
-    padding: 200px, 50px;
-    margin: 0;
 }
