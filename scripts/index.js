@@ -28,7 +28,7 @@ function objProject(Container, Source) {
                             .attr('href', 'javascript:void(0);')
                             .text('here.')))
                     .append($('<p>')
-                        .html('Platform: <span class="text-primary">' + (Prop.Platform || '<No Info>') + '</span>'))
+                        .html('Platform(s): <span class="text-primary">' + (Prop.Platform || '<No Info>') + '</span>'))
                 ).append($('<div>')
                     .addClass('resume-date text-md-right text-primary')
                     //.html(Prop.Platform || '(No Info)'))
