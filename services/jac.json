@@ -8,6 +8,7 @@
     "Platform": "<i class=\"fab fa-android\"></i> <i class=\"fab fa-apple\"></i>",
     "Features": "Donwloading of Previous Convertions brochures, Responsive map",
     "Tools": "Ionic3, AngularJS, CSS3, HTML5, JavaScript",
+    "Thumbnail": "Img/JAC/Thumbnail.jpg",
     "ScreenShots": [{
             "Name": "Home Banner",
             "Details": "",

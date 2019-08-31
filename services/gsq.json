@@ -7,25 +7,26 @@
     "Platform": "<i class=\"fab fa-android\"></i>",
     "Features": "Question Database, Saving, Loading, Clearing of Saved data, Sound & Background FX,Leader board, Hint.",
     "Tools": "Game Maker Studio",
+    "Thumbnail": "Img/GSQ/Thumbnail.jpg",
     "ScreenShots": [{
             "Name": "Home Page",
             "Details": "",
-            "URL": "Img/GSQ/GSQ_Home.png"
+            "URL": "Img/GSQ/GSQ_Home.jpg"
         },
         {
             "Name": "Adventure Mode",
             "Details": "",
-            "URL": "Img/GSQ/GSQ_Adventure_1.png"
+            "URL": "Img/GSQ/GSQ_Adventure_1.jpg"
         },
         {
             "Name": "Loading Page",
             "Details": "",
-            "URL": "Img/GSQ/GSQ_Loading.png"
+            "URL": "Img/GSQ/GSQ_Loading.jpg"
         },
         {
             "Name": "Leader Board",
             "Details": "",
-            "URL": "Img/GSQ/GSQ_LeaderBoard.png"
+            "URL": "Img/GSQ/GSQ_LeaderBoard.jpg"
         }
     ]
 }

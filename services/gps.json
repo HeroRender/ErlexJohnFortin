@@ -8,6 +8,7 @@
     "Platform": "<i class=\"fab fa-android\"></i> <i class=\"fab fa-apple\"></i>",
     "Features": "GPS, Fool Proof time data capturing, Error Reporting, Time Data History, QR code setup",
     "Tools": "Ionic3, AngularJS, CSS3, HTML5, JavaScript, Cordova(Camera,QR) API, Google Maps API",
+    "Thumbnail": "Img/GPS/Thumbnail.jpg",
     "ScreenShots": [{
             "Name": "Main Page",
             "Details": "",

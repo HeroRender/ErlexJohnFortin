@@ -8,25 +8,26 @@
     "Platform": "<i class=\"fab fa-android\"></i>",
     "Features": "Saving, Loading, Clearing of Saved data, Sound & Background FX, Leader board, Themes, Hint.",
     "Tools": "Game Maker Studio",
+    "Thumbnail": "Img/COE/Thumbnail.jpg",
     "ScreenShots": [{
             "Name": "Home Page",
             "Details": "",
-            "URL": "Img/COE/COE_Home.png"
+            "URL": "Img/COE/COE_Home.jpg"
         },
         {
             "Name": "Game Mode:Lv1",
             "Details": "",
-            "URL": "Img/COE/COE_GameMode.png"
+            "URL": "Img/COE/COE_GameMode.jpg"
         },
         {
             "Name": "Level Selection",
             "Details": "",
-            "URL": "Img/COE/COE_SelectLevel.png"
+            "URL": "Img/COE/COE_SelectLevel.jpg"
         },
         {
             "Name": "Player Selection",
             "Details": "",
-            "URL": "Img/COE/COE_SelectPlayer.png"
+            "URL": "Img/COE/COE_SelectPlayer.jpg"
         }
     ]
 }

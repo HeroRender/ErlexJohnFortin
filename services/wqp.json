@@ -8,20 +8,21 @@
     "Platform": "<i class=\"fab fa-android\"></i>",
     "Features": "Saving, Loading, Clearing of Saved data, Sound & Background FX, Leader board, Themes.",
     "Tools": "Game Maker Studio",
+    "Thumbnail": "Img/WQP/Thumbnail.jpg",
     "ScreenShots": [{
             "Name": "Home Page",
             "Details": "",
-            "URL": "Img/WQP/WQP_Home.png"
+            "URL": "Img/WQP/WQP_Home.jpg"
         },
         {
             "Name": "Game Mode",
             "Details": "",
-            "URL": "Img/WQP/WQP_GameMode.png"
+            "URL": "Img/WQP/WQP_GameMode.jpg"
         },
         {
             "Name": "Leader Board",
             "Details": "",
-            "URL": "Img/WQP/WQP_LeaderBoard.png"
+            "URL": "Img/WQP/WQP_LeaderBoard.jpg"
         }
     ]
 }

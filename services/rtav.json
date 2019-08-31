@@ -7,6 +7,7 @@
     "Platform": "<i class=\"fab fa-chrome\"> IoT",
     "Features": "Real Time Attendance & Meal Monitoring, Downloading and Exporting of Encrypted Timedata, Configuring/Managing/OTA Update of IoT Time keeping Devices, Branch Assiging, Report Generation",
     "Tools": "C# MVC ASP.net , CSS3, HTML5, JavaScript, JQuery, BootStrap, MQTT, Effine Encryption",
+    "Thumbnail": "Img/RTAV/Thumbnail.jpg",
     "ScreenShots": [{
             "Name": "RTAV Home",
             "Details": "",

@@ -7,10 +7,11 @@
     "Description": "The E.D.S. BRIDGE is the most advanced and friendliest automated real-time student attendance monitoring and school-parent communication system in the market today. Unlike the outdated text (SMS) messaging, the system uses picture capture and push notifications that allows data and graphics to be sent to parents and guardians anywhere in the world (at no extra cost).",
     "Platform": "<i class = \"fab fa-windows\"></i> <i class=\"fab fa-chrome\"></i> <i class=\"fab fa-android\"></i> <i class=\"fab fa-apple\"></i>",
     "Tools": "Ionic3, AngularJS, CSS3, HTML5, JavaScript, VB.Net, AWS S3, Appery Push Notification, Camera API",
+    "Thumbnail": "Img/Bridge/Thumbnail.jpg",
     "ScreenShots": [{
             "Name": "Windows Application",
             "Details": "the one responsible for capturing attendance of the student",
-            "URL": "Img/Bridge/BridgeApp_Win.png"
+            "URL": "Img/Bridge/BridgeApp_Win.jpg"
         },
         {
             "Name": "Bridge App Home Page",

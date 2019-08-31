@@ -3,9 +3,10 @@
     "Category": "Corporate",
     "Link": "https: //www.eds.com.ph/sync",
     "Description": "Having problem handling data of your multiple branch? Have to download time data from satelite branch and upload to server data? time data may be tampered during this process, risky isn`t it. Well luckily EDS Sync got you covered! time data, employee information/status, suspend employee to work, add or remove finger print/face data and a lot more. anything you want to do on database can be done thru EDS sync. It is just simply amazing.",
-    "Summary": "An application that synchronize(2-way) database records from server to ALL clients and client-sever-clients.",
+    "Summary": "An application that synchronize(2-way) database records, from server to ALL clients and Client-Sever-clients.",
     "Platform": "<i class = \"fab fa-windows\"></i> <i class=\"fab fa-chrome\">",
     "Tools": "VB.Net, Win Sockets,C# Web Forms, Razor, CSS3, HTML5, JavaScript, JQuery, BootStrap,",
+    "Thumbnail": "Img/Sync/Thumbnail.jpg",
     "ScreenShots": [
         {
             "Name": "Sync Client Web Console: Summary",

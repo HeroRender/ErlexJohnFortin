@@ -1,15 +1,15 @@
 // Parent Object
 function objProject(Container, Source) {
     // Methods/functions
-    this.LoadData = function(URL) {
-        $.get(URL, function(DATA) {
+    this.LoadData = function (URL) {
+        $.get(URL, function (DATA) {
             thisObject.Propeties = DATA;
             // Render the object
             thisObject.Render();
         });
     }
 
-    this.Render = function() {
+    this.Render = function () {
         let Prop = this.Propeties;
         $('#' + this.Container)
             .html('')
@@ -24,19 +24,43 @@ function objProject(Container, Source) {
                         .addClass('subheading mb-3')
                         .text((Prop.Summary || Prop.Description) + ' For more information please click ')
                         .append($('<a>')
-                            .on('click', function() { openDetails(Prop) })
+                            .on('click', function () { openDetails(Prop) })
                             .attr('href', 'javascript:void(0);')
                             .html('here <i class="fas fa-link"></i>.')))
                     .append($('<p>')
                         .html('Platform(s): <span class="text-primary lead">' + (Prop.Platform || '<No Info>') + '</span>'))
-                ).append($('<div>')
-                    .addClass('resume-date text-md-right text-primary')
-                    //.html(Prop.Platform || '(No Info)'))
-                    //.attr('id', divScreenShots)
+                )
+                .append($('<div>')
+                    .addClass('resume-thumbnail justify-content-center')
+                    .append($('<img/>')
+                        .attr('src', Prop.Thumbnail)
+                        .addClass('img-fluid img-thumbnail')
+                    )
                 )
             )
+        /*
+        if ($('#' + this.Container).hasClass('text-right')) {
+            $('#' + this.Container + ' .resume-item')
+                .prepend($('<div>')
+                    .append(`<img src="${Prop.Thumbnail}" class="img-fluid" />`)
+                    //.addClass('resume-date text-md-right text-primary')
+                    //.html(Prop.Platform || '(No Info)')
+                    //.attr('id', divScreenShots)
+                )
+        } else {
+            $('#' + this.Container + ' .resume-item')
+                .append($('<div>')
+                    .append(`<img src="${Prop.Thumbnail}" class="img-fluid" />`)
+                    //.addClass('resume-date text-md-right text-primary')
+                    //.html(Prop.Platform || '(No Info)')
+                    //.attr('id', divScreenShots)
+                )
+
+        }*/
         CreateScreenShots(Prop.ScreenShots);
     }
+
+
 
     // Abstracted Methods/functions
     function CreateScreenShots(ScreenShots) {
@@ -161,7 +185,7 @@ function openDetails(obj) {
     $("#detailModal").modal("toggle");
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     // Corporate
     let objSync = new objProject('divProjSync', 'services/sync.json');
     let objRTAV = new objProject('divProjRTAV', 'services/rtav.json')
