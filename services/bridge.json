@@ -16,12 +16,12 @@
         {
             "Name": "Bridge App Home Page",
             "Details": "Parent or guardian may his/her children attendance in here.",
-            "URL": "Img/Bridge/BridgeApp_Home.png"
+            "URL": "Img/Bridge/BridgeApp_Home.jpg"
         },
         {
             "Name": "Bridge App Home login page",
             "Details": "Parent or guardian needs to input his/her unique activation code here.",
-            "URL": "Img/Bridge/BridgeApp_Login.png"
+            "URL": "Img/Bridge/BridgeApp_Login.jpg"
         }
     ]
 }
