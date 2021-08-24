@@ -1,0 +1,12 @@
+{
+    "ProjectName": "Title Upgrade Program Application (TUP)",
+    "Category": "Corporate",
+    "Link": null,
+    "Description": "Converts hard copy land titles into a electronic title and integrate it to other Systems.",
+    "Summary": "Converts hard copy land titles into a electronic title and integrate it to other Systems.",
+    "Platform": "<i class = \"fab fa-windows\"> <i class=\"fab fa-chrome\"> ",
+    "Features": "Encoding of title information, Trace what is the current status of title or transaction, withdraw title or transaction, encrypt and decrypt uploaded images, generate and export user productivity report, integration to the other existing Systems.",
+    "Tools": "AngularJS, JQuery, Bootstrap, C#, ASP.MVC, Multi-Tier architecture, Sybase, Crystal Reports, MS Excel",
+    "Thumbnail": "Img/Common/Classified.jpg",
+    "ScreenShots": null
+}

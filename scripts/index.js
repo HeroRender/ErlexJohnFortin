@@ -64,7 +64,7 @@ function objProject(Container, Source) {
 
     // Abstracted Methods/functions
     function CreateScreenShots(ScreenShots) {
-        if (ScreenShots.lenght > 0) return false;
+        if (CreateScreenShots || ScreenShots.lenght > 0) return false;
         let carouselID = divScreenShots + '_Carousel';
         $('#' + divScreenShots)
             .append($(`<div id=${carouselID} class="carousel slide" data-ride="carousel">`)
@@ -146,11 +146,13 @@ function openDetails(obj) {
                     </div>`)
     }
 
+    let linkAtDescription = obj.Link ? ` Want to see it in action? click <a href="${obj.Link}" target="_blank">here <i class="fas fa-external-link-alt"></i>.</a>`: "";
+
     // Draw Details
     $('#' + detailID)
         .append('<h4>Description:</h4>')
         .append($('<p>')
-            .append(obj.Description + ` Want to see it in action? click <a href="${obj.Link}" target="_blank">here <i class="fas fa-external-link-alt"></i>.</a>`))
+            .append(obj.Description + linkAtDescription))
         .append('<h4>Features:</h4>')
         .append($('<p>').text(obj.Features))
         .append('<h4>Tools and Technologies:</h4>')
@@ -192,6 +194,8 @@ $(document).ready(function () {
     let objBridge = new objProject('divProjBridge', 'services/bridge.json');
     let objGPS = new objProject('divProjGPS', 'services/gps.json');
     let objJAC = new objProject('divProjJAC', 'services/jac.json');
+    let objTUP = new objProject('divProjTUP', 'services/tup.json');
+    let objEIS = new objProject('divProjEIS', 'services/eis.json');
 
     // Games
     let objWQP = new objProject('divProjWQP', 'services/wqp.json');

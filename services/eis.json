@@ -1,0 +1,12 @@
+{
+    "ProjectName": "Executive Information System (EIS)",
+    "Category": "Corporate",
+    "Link": null,
+    "Description": "The goal of the application is to provide the management a birds eye view to the performance of the individual or group of employees, revenue, inventory supply view, transaction detail, and incident ticket detail",
+    "Summary": "The application is being used by the top management to monitor and get an insight of the company.",
+    "Platform": "<i class = \"fab fa-windows\"> <i class=\"fab fa-chrome\"> ",
+    "Features": "Aggregate data per Registry of Deeds and transmit those data to the Main Server. View performace per Registry of Deeds, per employee or per region, check revenue per Registry of Deeds inventory supply, view transaction detail, and incident ticket detail. All of it can be filtered by per Registry of deed time periods.",
+    "Tools": "AngularJS, JQuery, Bootstrap, C#, DataTables, ChartJS, ASP Core MVC, Multi-Tier architecture, Sybase", 
+    "Thumbnail": "Img/Common/Classified.jpg",
+    "ScreenShots": null
+}
